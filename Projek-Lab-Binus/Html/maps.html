@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <link rel="stylesheet" href="./../CSS/mapstyle.css">
+    <script src="./../JS/mobileheader.js"></script>
+    <script src="./../JS/script.js"></script>
+    <script src="./../JS/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <!-- DESKTOP HEADER  -->
+
+    <div class="header">
+        <div class="hLeft">
+        <a href="homepage.html"><img id="lfLogo" src="./../Assets/Logo 3.png" alt=""></a>
+            <div class="hlText">
+                <div class="hAgents">
+                    <a href="agents.html" class="agentslink">Agents</a>
+                </div>
+
+                <div class="navbar">
+                    <a class="navMap" href="maps.html">Maps</a>
+                    <div class="navbar-item">
+                        <a class="navMaps" href="maps.html#ascentTitle"> <img src="./../Assets/Maps/Ascent.png" alt=""> Ascent</a>
+                        <a class="navMaps" href="maps.html#bindTitle"> <img src="./../Assets/Maps/Bind.png" alt=""> Bind</a>
+                        <a class="navMaps" href="maps.html#breezeTitle"> <img src="./../Assets/Maps/Breeze.jpg" alt=""> Breeze</a>
+                        <a class="navMaps" href="maps.html#havenTitle"> <img src="./../Assets/Maps/Haven.png" alt=""> Haven</a>
+                        <a class="navMaps" href="maps.html#iceboxTitle"> <img src="./../Assets/Maps/Icebox.png" alt=""> Ice Box</a>
+                        <a class="navMaps" href="maps.html#splitTitle"> <img src="./../Assets/Maps/Split.png" alt=""> Split</a>
+                    </div>
+                </div>
+                
+                <div class="hSpecs">
+                    <a href="specs.html" class="specslink">Specs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hRight">
+           <img src="./../Assets/Homepage/RegisterGirl.png" alt=""> 
+           <a id="hRegister"href="registration.html">Pre-Register Now</a>   
+        </div>
+    </div>
+
+    <!-- MOBILE HEADER  -->
+
+    <div class="mobileHeader">
+        <div class="mobileNavbar" onclick="togglenavbarMenu()">
+            <div class="buttonbar"></div>
+            <div class="buttonbar"></div>
+            <div class="buttonbar"></div>
+        </div>
+        <div class="lfmobileLogo">
+            <a href="homepage.html"><img id="lfmobilelogoImage" src="./../Assets/Logo 3.png" alt=""></a>
+        </div>
+    </div>
+    <div id="mobilenavbar-item">
+                <a class="mobileNavigation" href="homepage.html">Home</a> 
+                <a class="mobileNavigation"href="agents.html">Agents</a> 
+                <a class="mobileNavigation"href="maps.html">Maps</a> 
+                <a class="mobileNavigation"href="specs.html">System Requirements</a> 
+                <a class="mobileNavigation"href="registration.html">Pre-Register</a>
+    </div>
+
+    <!-- MAPS SECTION  -->
+
+    <div class="lfMaps">
+        <div class="ascent">
+            <div id="ascentTitle">
+                ASCENT  
+            </div>
+         
+            <div id="ascentImage">
+                 <img src="./../Assets/Maps/Ascent.png" alt="">
+            </div>
+            <div class="ascentDesc">
+                <img src="./../Assets/Maps/Ascentlayout.png" alt="">
+                <div id="ascentdescText">
+                This is a placeholder text for the simple description of Ascent which will be consisted of
+                <br> description of the map, key map position call outs and so on
+                <br> For now this will be this random placeholder text until I can find a long enough
+                <br> description for the ascent that is roughly the same length of this placeholder text
+                </div>
+            </div>
+        </div>
+
+        <div class="mapSeparator"></div>
+
+        <div class="bind">
+            <div id="bindTitle">
+                BIND
+            </div>
+            <div id="bindImage">
+                 <img src="./../Assets/Maps/Bind.png" alt="">
+            </div>
+            <div class="bindDesc">
+                <img src="./../Assets/Maps/Bindlayout.png" alt="">
+                <div id="binddescText">
+                This is a placeholder text for the simple description of Bind which will be consisted of
+                <br> description of the map, key map position call outs and so on
+                <br> For now this will be this random placeholder text until I can find a long enough
+                <br> description for the ascent that is roughly the same length of this placeholder text
+                </div>
+            </div>
+        </div>
+
+        <div class="mapSeparator"></div>
+
+        <div class="breeze">
+            <div id="breezeTitle">
+                BREEZE
+            </div>
+
+            <div id="breezeImage">
+                 <img src="./../Assets/Maps/Breeze.jpg" alt="">
+            </div>
+    
+            <div class="breezeDesc">
+                <img src="./../Assets/Maps/Breezelayout.png" alt="">
+                <div id="breezedescText">
+                This is a placeholder text for the simple description of Breeze which will be consisted of
+                <br> description of the map, key map position call outs and so on
+                <br> For now this will be this random placeholder text until I can find a long enough
+                <br> description for the ascent that is roughly the same length of this placeholder text
+                </div>
+            </div>
+        </div>
+
+        <div class="mapSeparator"></div>
+
+        <div class="haven">
+            <div id="havenTitle">
+                HAVEN
+            </div>
+            <div id="havenImage">
+                 <img src="./../Assets/Maps/Haven.png" alt="">
+            </div>
+            <div class="havenDesc">
+                <img src="./../Assets/Maps/Havenlayout.png" alt="">
+                <div id="havendescText">
+                This is a placeholder text for the simple description of Haven which will be consisted of
+                <br> description of the map, key map position call outs and so on
+                <br> For now this will be this random placeholder text until I can find a long enough
+                <br> description for the ascent that is roughly the same length of this placeholder text
+                </div>
+            </div>
+        </div>
+
+        <div class="mapSeparator"></div>
+
+        <div class="icebox">
+            <div id="iceboxTitle">
+                ICEBOX
+            </div>
+            <div id="iceboxImage">
+                 <img src="./../Assets/Maps/Icebox.png" alt="">
+            </div>
+            <div class="iceboxDesc">
+                <img src="./../Assets/Maps/Iceboxlayout.png" alt="">
+                <div id="iceboxdescText">
+                This is a placeholder text for the simple description of Icebox which will be consisted of
+                <br> description of the map, key map position call outs and so on
+                <br> For now this will be this random placeholder text until I can find a long enough
+                <br> description for the ascent that is roughly the same length of this placeholder text
+                </div>
+            </div>
+        </div>
+
+        <div class="mapSeparator"></div>
+
+        <div class="split">
+            <div id="splitTitle">
+                SPLIT
+            </div>
+            <div id="splitImage">
+                 <img src="./../Assets/Maps/Split.png" alt="">
+            </div>
+            <div class="splitDesc">
+                <img src="./../Assets/Maps/Splitlayout.png" alt="">
+                <div id="splitdescText">
+                This is a placeholder text for the simple description of Split which will be consisted of
+                <br> description of the map, key map position call outs and so on
+                <br> For now this will be this random placeholder text until I can find a long enough
+                <br> description for the ascent that is roughly the same length of this placeholder text
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+    <div class="footer">
+        <div id="socialmedia">
+            <img src="./../Assets/Social Media/twitter.png" alt="">
+            <img src="./../Assets/Social Media/facebook.png" alt="">
+            <img src="./../Assets/Social Media/youtube.png" alt="">
+        </div>
+        <div id="copyright">
+            &copy; LaForant company
+        </div>
+    </div>
+
+</body>
+</html>

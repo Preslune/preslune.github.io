@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaForant Agents</title>
+    <script src="./../JS/jquery-3.5.1.min.js"></script>
+    <script src="./../JS/script.js"></script>
+    <link rel="stylesheet" href="./../CSS/agentstyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hLeft">
+        <a href="homepage.html"><img id="lfLogo" src="./../Assets/Logo 3.png" alt=""></a>
+            <div class="hlText">
+                <div class="hAgents">
+                    <a href="agents.html" class="agentslink">Agents</a>
+                </div>
+
+                <div class="navbar">
+                    <a class="navMap" href="maps.html">Maps</a>
+                    <div class="navbar-item">
+                        <a class="navMaps" href="maps.html#ascentTitle"> <img src="./../Assets/Maps/Ascent.png" alt=""> Ascent</a>
+                        <a class="navMaps" href="maps.html#bindTitle"> <img src="./../Assets/Maps/Bind.png" alt=""> Bind</a>
+                        <a class="navMaps" href="maps.html#breezeTitle"> <img src="./../Assets/Maps/Breeze.jpg" alt=""> Breeze</a>
+                        <a class="navMaps" href="maps.html#havenTitle"> <img src="./../Assets/Maps/Haven.png" alt=""> Haven</a>
+                        <a class="navMaps" href="maps.html#iceboxTitle"> <img src="./../Assets/Maps/Icebox.png" alt=""> Ice Box</a>
+                        <a class="navMaps" href="maps.html#splitTitle"> <img src="./../Assets/Maps/Split.png" alt=""> Split</a>
+                    </div>
+                </div>
+                
+                <div class="hSpecs">
+                    <a href="specs.html" class="specslink">Specs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hRight">
+           <img src="./../Assets/Homepage/RegisterGirl.png" alt=""> 
+           <a id="hRegister"href="registration.html">Pre-Register Now</a>   
+        </div>
+    </div>
+
+     <!-- MOBILE HEADER  -->
+
+     <div class="mobileHeader">
+        <div class="mobileNavbar" onclick="togglenavbarMenu()">
+            <div class="buttonbar"></div>
+            <div class="buttonbar"></div>
+            <div class="buttonbar"></div>
+        </div>
+        <div class="lfmobileLogo">
+            <a href="homepage.html"><img id="lfmobilelogoImage" src="./../Assets/Logo 3.png" alt=""></a>
+        </div>
+    </div>
+    <div id="mobilenavbar-item">
+                <a class="mobileNavigation" href="homepage.html">Home</a> 
+                <a class="mobileNavigation"href="agents.html">Agents</a> 
+                <a class="mobileNavigation"href="maps.html">Maps</a> 
+                <a class="mobileNavigation"href="specs.html">System Requirements</a> 
+                <a class="mobileNavigation"href="registration.html">Pre-Register</a>
+    </div>
+
+    <div class="agentsectionTitle">LaForant Agents</div>
+
+    <div class="agentSection">
+    <button id="prev">&#10094;</button>
+    <div class='slider'>
+        
+        <div class='slides'>
+            <div class='slide'>
+                <img src="./../Assets/Agents/BreachShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/BrimstoneShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/ErialShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/FeilyShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/InueShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/JettShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/KilljoyShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/RylahShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/ReynaShowcase.png" alt="">
+            </div>
+            <div class='slide'>
+                <img src="./../Assets/Agents/SageShowcase.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <button id="next">&#10095;</button>
+    </div>
+
+    <div class="agentsectText">
+        Quick Agent Selection
+    </div>
+
+    <div class="agentIconimage">
+            <img id="breachimage" src="./../Assets/Agents/BreachShowcase.png" alt="">
+            <img id="brimstoneimage"src="./../Assets/Agents/BrimstoneShowcase.png" alt="">
+            <img id="erialimage"src="./../Assets/Agents/ErialShowcase.png" alt="">
+            <img id="feilyimage"src="./../Assets/Agents/FeilyShowcase.png" alt="">
+            <img id="inueimage" src="./../Assets/Agents/InueShowcase.png" alt="">
+            <img id="jettimage"src="./../Assets/Agents/JettShowcase.png" alt="">
+            <img id="killjoyimage"src="./../Assets/Agents/KilljoyShowcase.png" alt="">
+            <img id="reynaimage"src="./../Assets/Agents/ReynaShowcase.png" alt="">
+            <img id="rylahimage"src="./../Assets/Agents/RylahShowcase.png" alt="">
+            <img id="sageimage"src="./../Assets/Agents/SageShowcase.png" alt="">
+    </div>
+
+    <div class="agentSect">
+        <div class="agentIcon">
+    
+                <img id="breach" src="./../Assets/Agents/Breachicon.png" alt="">
+                <img id="brimstone" src="./../Assets/Agents/Brimstoneicon.png" alt="">
+                <img id="erial" src="./../Assets/Agents/Erialicon.png" alt="">
+                <img id="feily" src="./../Assets/Agents/Feilyicon.png" alt="">
+                <img id="inue"src="./../Assets/Agents/Inueicon.png" alt="">
+                <img id="jett" src="./../Assets/Agents/Jetticon.png" alt="">
+                <img id="killjoy" src="./../Assets/Agents/Killjoyicon.png" alt="">
+                <img id="reyna"src="./../Assets/Agents/Reynaicon.png" alt="">
+                <img id="rylah"src="./../Assets/Agents/Rylahicon.png" alt="">
+                <img id="sage" src="./../Assets/Agents/Sageicon.png" alt="">
+          
+            
+        </div>
+    </div>
+    
+    <div class="mobilefiller"></div>
+
+    <div class="footer">
+        <div id="socialmedia">
+            <img src="./../Assets/Social Media/twitter.png" alt="">
+            <img src="./../Assets/Social Media/facebook.png" alt="">
+            <img src="./../Assets/Social Media/youtube.png" alt="">
+        </div>
+        <div id="copyright">
+            &copy; LaForant company
+        </div>
+    </div>
+    
+</body>
+</html>

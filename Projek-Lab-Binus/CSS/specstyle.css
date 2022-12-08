@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+}
+
+.header{
+    padding: 0;
+    background-color: rgb(67, 149, 255);
+    /* background-image: url(./../Assets/Homepage/TextBox.png); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size : cover; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 0;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .hlText{
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.header .hLeft{
+    display: flex;
+    align-items: center;
+}
+
+.header .hLeft .hlText{
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.header .hLeft .hlText .navbar, .hAgents{
+    margin-right: 5vw;
+}
+
+.agentslink{
+    text-decoration: none;
+    color: black;    
+    padding: 5vh 6vh;
+    border: none;
+}
+
+.navMap{
+    text-decoration: none;
+    color: black;
+}
+
+.navMap {
+    background-color: rgb(67, 149, 255);
+    color: black;
+    padding: 5vh 6vh;
+    border: none;
+    text-decoration: none;
+}
+  
+.navbar {
+    position: relative;
+    display: inline-block;
+}
+  
+.navbar-item {
+    display: none;
+    position: absolute;
+    background-color: rgb(38, 115, 216);
+    min-width: 40vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar-item img{
+    /* width: 150px;
+    height: 75px; */
+    width: 18vh;
+    height: 9vh;
+}
+  
+.navbar-item .navMaps {
+    color: black;
+    padding: 1vh 2vh;
+    font-size: 4vh;
+    text-decoration: none;
+    display: block;
+}
+  
+.navbar-item .navMaps:hover {
+    background-color: #ddd;
+}
+  
+.navbar:hover .navbar-item {
+    display: block;
+}
+  
+
+.navbar:hover .navMap , .agentslink:hover , .specslink:hover{
+    background-color: #db3edb;
+}
+
+.specslink{
+    text-decoration: none;
+    color: black;
+    padding: 5vh 6vh;
+    border: none;
+}
+
+.header .hRight{
+    display: flex;
+    align-items: center;
+}
+
+.header .hRight img{
+    /* width: 120px;
+    height: 120px; */
+    height: 12vh;
+    width: 12vh;
+}
+
+#hRegister{
+    background-color: rgb(25, 25, 75);
+    padding: 2vh;
+   color: orange;
+   text-decoration: none;
+   margin-right: 3vh;
+   font-size: 3vh;
+}
+
+#hRegister:hover{
+    background-color: rgb(47, 47, 141);
+}
+
+#lfLogo{
+    /* width: 200px;
+    height: 100px; */
+    display: flex;
+    align-items: center;
+    width: 24vh;
+    height: 12vh;
+}
+
+.spec{
+    background-color: rgb(30, 30, 105);
+}
+
+.specimg{
+    display: flex;
+    justify-content: center;
+    /* background-image: url(./../Assets/SystemRequirements.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; */
+}
+
+.specsheet{
+    margin-top: 14vh;
+    background-color: rgb(30, 30, 105);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.specsheetbottom{
+    background-color: rgb(30, 30, 105);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#specimage{
+    background-color: rgb(30, 30, 105);
+    max-width: 80%;
+    min-height: 100%;
+}
+
+.footer{
+    background-color: rgb(50, 98, 160);
+    padding: 2vh;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#socialmedia img{
+    margin-left: 1vh;
+    width: 5vh;
+    height: 5vh;
+}
+
+.mobileHeader{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    border: 0;
+    background-color: rgb(67, 149, 255);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.buttonbar{
+    height: 10%;
+    width: 10vh;
+    background-color: white;
+    margin-left: 2vh;
+    margin-top: 1.8vh;
+}
+
+.lfmobileLogo img{
+    height:10vh;
+    width: 20vh;
+    margin-right: 1vh;
+}
+
+.mobileNavbar{
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+}
+
+.mobileNavigation{
+    text-decoration: none;
+    color: white;
+    font-size: 4vh;
+    padding: 2vh;
+}
+
+#mobilenavbar-item {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: fixed;
+    background-color: rgb(67, 149, 255);
+    padding: 0;
+    z-index: 1;
+}
+
+/* @media only screen and (min-width: 1000px) {
+    .specimg{
+        height: 100vh;
+    }
+} */
+
+/* @media only screen and (min-width: 1000px) and (min-width: 800px) {
+    .specimg{
+        height: 50vh;
+    }
+} */
+
+
+@media only screen and (max-width: 600px){
+    .header{
+        display: none;
+    }
+    .mobileHeader, .mobileMiddle , .mobileMaps , .mobileAgents{
+        display: flex;
+    }
+    .specsheet{
+        margin-top: 10vh;
+        height: 20vh;
+    }
+    .specimg{
+        height: 200px;
+    }
+    .specsheetbottom{
+        height: 20vh;
+    }
+    .spec{
+        width:150vw;
+    }
+    .footer{
+        width: 142.2vw;
+    }
+    #specimage{
+        max-width: 100%;
+    }
+    /* #mobileLaForant{
+        margin-top: 10vh;
+    }
+    .mobilemiddleText, #mobilemaText, #mobilemText, #mobileLaForant , #viewAgents ,#mobilemRegister, #mobileviewagents , #mobileMaps, #mobileviewmaps {
+        display: flex;
+    }
+    .middle{
+        display: none;
+        margin-top: 0;
+        min-height: 50vh;
+    }
+    .mText, .agentsText, .mapsText{
+        display: none;
+        background: none;
+        padding: 0;
+        padding-top: 7vh;
+    }
+    #LaForant, #Agents , #Maps{
+        display: none;
+        font-size: 6vh;
+    }
+    #lfText, #maText , #mmText{
+        font-size: 3vh;
+    }
+    #mRegister, #viewagents , #viewmaps{
+        font-size: 4vh;
+    }
+    .mAgents, .mMaps{
+        display: none;
+        min-height: 50vh;
+    } */
+}
+
+/* @media only screen and (max-width: 600px){
+    .mobileMiddle , .mobileMaps , .mobileAgents{
+        display: flex;
+        height: 50vh;
+    }
+} */
+
+/* @media only screen and (max-height: 600px){
+    .header{
+        display: none;
+    }
+    .mobileHeader, .mobileMiddle , .mobileMaps , .mobileAgents{
+        display: flex;
+    }
+    .specsheet{
+        margin-top: 10vh;
+        height: 5vh;
+    }
+    .specimg{
+        height: 250px;
+        width: 280px;
+    }
+    .specsheetbottom{
+        height: 5vh;
+    } */
+    /* #mobileLaForant{
+        margin-top: 10vh;
+    }
+    .mobilemiddleText, #mobilemaText, #mobilemText, #mobileLaForant , #viewAgents ,#mobilemRegister, #mobileviewagents , #mobileMaps, #mobileviewmaps {
+        display: flex;
+    }
+    .middle{
+        display: none;
+        margin-top: 0;
+        min-height: 50vh;
+    }
+    .mText, .agentsText, .mapsText{
+        display: none;
+        background: none;
+        padding: 0;
+        padding-top: 7vh;
+    }
+    #LaForant, #Agents , #Maps{
+        display: none;
+        font-size: 6vh;
+    }
+    #lfText, #maText , #mmText{
+        font-size: 3vh;
+    }
+    #mRegister, #viewagents , #viewmaps{
+        font-size: 4vh;
+    }
+    .mAgents, .mMaps{
+        display: none;
+        min-height: 50vh;
+    } */
